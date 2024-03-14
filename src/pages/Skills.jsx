@@ -1,14 +1,24 @@
 import Heading from '../components/Heading';
+import ProgressBar from '../components/ProgressBar';
+import { skills } from '../data';
 
 const Skills = () => {
   return (
-    <div className='w-[50%] h-screen bg-[#1e1e1e] px-20 py-16'>
+    <div className='de w-[50%] h-screen bg-[#1e1e1e] px-20 py-16 overflow-scroll'>
       <Heading title='skills' />
-      <div className='h-[100px] w-[100px] bg-black rounded-full flex items-center justify-center'>
-        <div className='h-[75px] w-[75px] bg-white rounded-full flex items-center justify-center'>
-          <h1 className='font-jolly text-2xl'>HTML</h1>
-        </div>
-      </div>
+      <section className='h-full w-full grid grid-cols-3 gap-5 mt-8'>
+        {skills.map((item) => {
+          const { id, bg, skill } = item;
+          return (
+            <div
+              key={id}
+              className='rounded-xl flex items-center justify-center shadow-sm shadow-gray-600 hover:scale-[1.1] transition-all ease-in-out'
+            >
+              <ProgressBar bg={bg} skill={skill} />
+            </div>
+          );
+        })}
+      </section>
     </div>
   );
 };
