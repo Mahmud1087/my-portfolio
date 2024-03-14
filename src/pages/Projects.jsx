@@ -5,13 +5,13 @@ const Projects = () => {
   return (
     <div className='w-[50%] h-screen bg-[#1e1e1e] p-16 overflow-scroll'>
       <Heading title='projects' />
-      <div className='w-full grid grid-cols-2 gap-x-6 gap-y-8 mt-12'>
+      <div className='w-full grid grid-cols-2 gap-x-4 gap-y-8 mt-12'>
         {projects.map((project) => {
           const { id, link, image, githubLink, desc } = project;
           return (
             <section
               key={id}
-              className='w-full h-80 bg-[#0000003d] rounded-xl p-2 flex flex-col gap-2 shadow-md shadow-gray-700'
+              className='w-full h-80 bg-[#0000003d] rounded-xl p-2 flex flex-col gap-2 shadow-sm shadow-gray-700'
             >
               <div className='h-[75%] w-full rounded-xl relative'>
                 <img
