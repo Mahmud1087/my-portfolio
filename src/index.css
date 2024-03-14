@@ -10,3 +10,27 @@
 .de {
   scroll-snap-type: none;
 } */
+
+.lbl {
+  display: flex;
+  flex-direction: column;
+  gap: 1.2rem;
+  color: white;
+  font-family: 'Lexend';
+  font-size: 20px;
+
+  input,
+  textarea {
+    padding: 13px;
+    width: 70%;
+    border-radius: 8px;
+    background: #a79f9f50;
+    font-size: 16px;
+    /* border: 1px solid #21ff60ad; */
+  }
+
+  input:focus,
+  textarea:focus {
+    outline: 1px solid #21ff60ad;
+  }
+}
