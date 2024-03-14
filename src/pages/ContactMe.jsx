@@ -15,7 +15,7 @@ const ContactMe = () => {
         </label>
         <label htmlFor='message' className='lbl'>
           Message
-          <textarea name='message' id='message'></textarea>
+          <textarea name='message' id='message' cols='30' rows='10'></textarea>
         </label>
         <button
           type='submit'
