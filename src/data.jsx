@@ -1,3 +1,5 @@
+import projectImage from './assets/projectImage.png';
+
 import {
   FaAddressBook,
   FaHouse,
@@ -79,4 +81,49 @@ export const skills = [
   //   bg: 'bg-[conic-gradient(transparent_216deg,#FF5733_216deg)]',
   //   skill: 'HTML',
   // },
+];
+
+export const projects = [
+  {
+    id: 1,
+    image: projectImage,
+    link: '',
+    githubLink: '',
+    desc: 'This is just another project built with reactJs',
+  },
+  {
+    id: 2,
+    image: projectImage,
+    link: '',
+    githubLink: '',
+    desc: 'This is just another project built with reactJs',
+  },
+  {
+    id: 3,
+    image: projectImage,
+    link: '',
+    githubLink: '',
+    desc: 'This is just another project built with reactJs',
+  },
+  {
+    id: 4,
+    image: projectImage,
+    link: '',
+    githubLink: '',
+    desc: 'This is just another project built with reactJs',
+  },
+  {
+    id: 5,
+    image: projectImage,
+    link: '',
+    githubLink: '',
+    desc: 'This is just another project built with reactJs',
+  },
+  {
+    id: 6,
+    image: projectImage,
+    link: '',
+    githubLink: '',
+    desc: 'This is just another project built with reactJs',
+  },
 ];

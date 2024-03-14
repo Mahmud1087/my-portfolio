@@ -4,7 +4,7 @@ import Button from '../components/Button';
 
 const About = () => {
   return (
-    <div className='w-[50%] h-screen bg-[#1e1e1e] flex flex-col gap-8 px-20 py-16'>
+    <div className='w-[50%] h-screen bg-[#1e1e1e] flex flex-col gap-8 p-16'>
       <Heading title='about me' />
       <p className='text-[#A79F9F] font-lato leading-8'>
         Jelly sweet roll jelly beans biscuit pie macaroon chocolate donut.
