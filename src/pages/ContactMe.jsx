@@ -1,10 +1,21 @@
 import Heading from '../components/Heading';
+import { motion } from 'framer-motion';
 
 const ContactMe = () => {
   return (
     <div className='w-[50%] h-screen bg-[#1e1e1e] p-16 overflow-scroll'>
       <Heading title='contact me' />
-      <form className='w-full h-[inherit] mt-12 flex flex-col gap-8'>
+      <motion.form
+        initial={{ y: 1000 }}
+        animate={{ y: 0 }}
+        transition={{
+          type: 'linear',
+          duration: 0.7,
+          delay: 0.4,
+          ease: [0.2, 0.71, 0.2, 1.01],
+        }}
+        className='w-full h-[inherit] mt-12 flex flex-col gap-8'
+      >
         <label htmlFor='name' className='lbl'>
           Name
           <input type='text' name='name' />
@@ -23,7 +34,7 @@ const ContactMe = () => {
         >
           Send
         </button>
-      </form>
+      </motion.form>
     </div>
   );
 };
