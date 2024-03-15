@@ -2,10 +2,21 @@ import { NavLink } from 'react-router-dom';
 import logo from '../assets/e-icon.png';
 import { menuList } from '../data';
 import { FaGithub } from 'react-icons/fa6';
+import { motion } from 'framer-motion';
 
 const SideNav = () => {
   return (
-    <div className='w-[15%] bg-[#1e1e1e] h-screen flex flex-col items-center'>
+    <motion.div
+      initial={{ x: -1000 }}
+      animate={{ x: 0 }}
+      transition={{
+        type: 'linear',
+        duration: 0.9,
+        delay: 0.4,
+        ease: [0.2, 0.71, 0.2, 1.01],
+      }}
+      className='w-[15%] bg-[#1e1e1e] h-screen flex flex-col items-center'
+    >
       <div className='w-full flex justify-center items-end text-3xl text-[#272727] px-3 py-2 bg-[#21ff60ad] mt-8 font-jolly'>
         <img src={logo} alt='logo' className='w-7' />
         n
@@ -36,7 +47,7 @@ const SideNav = () => {
           <FaGithub />
         </a>
       </div>
-    </div>
+    </motion.div>
   );
 };
 export default SideNav;

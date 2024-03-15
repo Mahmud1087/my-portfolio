@@ -13,7 +13,7 @@ import { motion } from 'framer-motion';
 const Hero = () => {
   return (
     <motion.div
-      initial={{ opacity: 0.2, scale: 0.3 }}
+      initial={{ opacity: 0, scale: 0.3 }}
       animate={{ opacity: 1, scale: 1 }}
       transition={{
         type: 'just',
