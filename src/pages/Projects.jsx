@@ -1,15 +1,42 @@
 import Heading from '../components/Heading';
 import { projects } from '../data';
+import { motion } from 'framer-motion';
 
 const Projects = () => {
+  const container = {
+    hidden: { opacity: 1, scale: 0 },
+    visible: {
+      opacity: 1,
+      scale: 1,
+      transition: {
+        delayChildren: 0.5,
+        staggerChildren: 0.3,
+      },
+    },
+  };
+
+  const items = {
+    hidden: { y: 20, opacity: 0 },
+    visible: {
+      y: 0,
+      opacity: 1,
+    },
+  };
+
   return (
     <div className='w-[50%] h-screen bg-[#1e1e1e] p-16 overflow-scroll'>
       <Heading title='projects' />
-      <div className='w-full grid grid-cols-2 gap-x-4 gap-y-8 mt-12'>
+      <motion.div
+        variants={container}
+        initial='hidden'
+        animate='visible'
+        className='w-full grid grid-cols-2 gap-x-4 gap-y-8 mt-12'
+      >
         {projects.map((project) => {
           const { id, link, image, githubLink, desc } = project;
           return (
-            <section
+            <motion.section
+              variants={items}
               key={id}
               className='w-full h-80 bg-[#0000003d] rounded-xl p-2 flex flex-col gap-2 shadow-sm shadow-gray-700'
             >
@@ -39,10 +66,10 @@ const Projects = () => {
                   Github
                 </a>
               </article>
-            </section>
+            </motion.section>
           );
         })}
-      </div>
+      </motion.div>
     </div>
   );
 };

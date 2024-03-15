@@ -1,7 +1,7 @@
 import Heading from '../components/Heading';
 import ProgressBar from '../components/ProgressBar';
 import { skills } from '../data';
-import { motion, stagger } from 'framer-motion';
+import { motion } from 'framer-motion';
 
 const Skills = () => {
   const container = {
