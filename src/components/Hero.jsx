@@ -19,7 +19,7 @@ const Hero = () => {
         type: 'just',
         duration: 0.9,
         delay: 0.4,
-        ease: [0.2, 0.71, 0.2, 1.01],
+        ease: 'linear',
       }}
       className='relative w-[35%] h-screen bg-[#1e1e1e]'
     >

@@ -11,6 +11,10 @@
   scroll-snap-type: none;
 } */
 
+body {
+  background-color: #1e1e1e;
+}
+
 .lbl {
   display: flex;
   flex-direction: column;
