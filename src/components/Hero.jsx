@@ -8,10 +8,21 @@ import {
   FaLinkedin,
   FaTwitter,
 } from 'react-icons/fa6';
+import { motion } from 'framer-motion';
 
 const Hero = () => {
   return (
-    <div className='relative w-[35%] h-screen'>
+    <motion.div
+      initial={{ opacity: 0.2, scale: 0.3 }}
+      animate={{ opacity: 1, scale: 1 }}
+      transition={{
+        type: 'just',
+        duration: 0.9,
+        delay: 0.4,
+        ease: [0.2, 0.71, 0.2, 1.01],
+      }}
+      className='relative w-[35%] h-screen bg-[#1e1e1e]'
+    >
       <img src={image} alt='Image' className='h-full w-full' />
       <div className='absolute w-full flex flex-col items-center justify-center bottom-10 text-white'>
         <h1 className='font-jolly text-5xl'>Mahmud Abdulazeez</h1>
@@ -31,7 +42,7 @@ const Hero = () => {
           </a>
         </div>
       </div>
-    </div>
+    </motion.div>
   );
 };
 export default Hero;
