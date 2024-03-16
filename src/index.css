@@ -43,3 +43,16 @@ body {
   box-shadow: #00000088 5px 20px 18px 10px;
   border: 2px solid #1e1e1e;
 }
+
+@media screen and (max-width: 768px) {
+  .lbl {
+    font-size: 28px;
+
+    input,
+    textarea {
+      width: 100%;
+      font-size: 28px;
+      padding: 15px;
+    }
+  }
+}
