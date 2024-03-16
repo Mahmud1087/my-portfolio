@@ -15,9 +15,9 @@ const SideNav = () => {
         delay: 0.4,
         ease: [0.2, 0.71, 0.2, 1.01],
       }}
-      className='hidden w-[15%] bg-[#1e1e1e] h-screen flex-col items-center sm:flex'
+      className='hidden w-[18%] bg-[#1e1e1e] h-screen flex-col items-center border-r-2 border-[#00000065] sm:px-3 sm:flex lg:px-0 lg:w-[15%]'
     >
-      <div className='w-full flex justify-center items-end text-3xl text-[#272727] px-3 py-2 bg-[#21ff60ad] mt-8 font-jolly'>
+      <div className='w-full flex justify-center items-end text-3xl text-[#272727] px-3 py-2 bg-[#21ff60ad] mt-8 font-jolly sm:rounded-lg lg:rounded-none'>
         <img src={logo} alt='logo' className='w-7' />
         n
         <img src={logo} alt='logo' className='w-7' />

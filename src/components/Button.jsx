@@ -15,7 +15,7 @@ const Button = ({ link, title }) => {
     >
       <Link
         to={link}
-        className='w-fit px-7 py-2 rounded-md border border-[#21ff60ad] bg-[#21ff60ad] hover:bg-transparent transition-all ease-in-out mt-6 font-lexend text-white font-semibold text-lg'
+        className='w-fit px-10 py-4 rounded-md border border-[#21ff60ad] bg-[#21ff60ad] hover:bg-transparent transition-all ease-in-out mt-6 font-lexend text-white font-semibold text-2xl lg:px-7 lg:py-2 lg:text-lg'
       >
         {title}
       </Link>
