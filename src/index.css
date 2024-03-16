@@ -33,6 +33,10 @@ body {
     /* border: 1px solid #21ff60ad; */
   }
 
+  textarea {
+    resize: none;
+  }
+
   input:focus,
   textarea:focus {
     outline: 1px solid #21ff60ad;
@@ -43,6 +47,12 @@ body {
   box-shadow: #00000088 5px 20px 18px 10px;
   border: 2px solid #1e1e1e;
 }
+
+/* .sent {
+  font-size: 26px;
+  width: 70vw;
+  margin: auto;
+} */
 
 @media screen and (max-width: 768px) {
   .lbl {
