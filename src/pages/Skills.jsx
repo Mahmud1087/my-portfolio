@@ -2,27 +2,9 @@ import Heading from '../components/Heading';
 import ProgressBar from '../components/ProgressBar';
 import { skills } from '../data';
 import { motion } from 'framer-motion';
+import { container, items } from '../components/utils';
 
 const Skills = () => {
-  const container = {
-    hidden: { opacity: 1, scale: 0 },
-    visible: {
-      opacity: 1,
-      scale: 1,
-      transition: {
-        delayChildren: 0.5,
-        staggerChildren: 0.3,
-      },
-    },
-  };
-
-  const items = {
-    hidden: { y: 20, opacity: 0 },
-    visible: {
-      y: 0,
-      opacity: 1,
-    },
-  };
   return (
     <div className='w-full h-screen bg-[#1e1e1e] p-16 overflow-scroll lg:w-1/2'>
       <Heading title='skills' />
