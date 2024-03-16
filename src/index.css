@@ -38,3 +38,8 @@ body {
     outline: 1px solid #21ff60ad;
   }
 }
+
+.shdw {
+  box-shadow: #00000088 5px 20px 18px 10px;
+  border: 2px solid #1e1e1e;
+}

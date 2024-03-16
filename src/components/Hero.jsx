@@ -21,7 +21,7 @@ const Hero = () => {
         delay: 0.4,
         ease: 'linear',
       }}
-      className='relative w-[35%] h-screen bg-[#1e1e1e]'
+      className='hidden relative w-[35%] h-screen bg-[#1e1e1e] lg:block'
     >
       <img src={image} alt='Image' className='h-full w-full' />
       <div className='absolute w-full flex flex-col items-center justify-center bottom-10 text-white'>
