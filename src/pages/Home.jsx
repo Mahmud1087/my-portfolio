@@ -36,7 +36,7 @@ const Home = () => {
           <span className='code'>{'<>'}</span> Technical Writer{' '}
           <span className='code'>{'</>'}</span>
         </p>
-        <p>
+        <p className='mb-6'>
           <span className='code'>{'<>'}</span> Open Source Enthusiast{' '}
           <span className='code'>{'</>'}</span>
         </p>
