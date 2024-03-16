@@ -15,7 +15,7 @@ const SideNav = () => {
         delay: 0.4,
         ease: [0.2, 0.71, 0.2, 1.01],
       }}
-      className='w-[15%] bg-[#1e1e1e] h-screen flex flex-col items-center'
+      className='hidden w-[15%] bg-[#1e1e1e] h-screen flex-col items-center sm:flex'
     >
       <div className='w-full flex justify-center items-end text-3xl text-[#272727] px-3 py-2 bg-[#21ff60ad] mt-8 font-jolly'>
         <img src={logo} alt='logo' className='w-7' />
@@ -24,7 +24,7 @@ const SideNav = () => {
         si
       </div>
 
-      <article className='flex flex-col gap-10 mt-24'>
+      <article className='flex flex-col sm:gap-16 sm:mt-36 lg:gap-10 lg:mt-24'>
         {menuList.map((item) => {
           const { id, icon, text, to } = item;
           return (
@@ -33,10 +33,10 @@ const SideNav = () => {
               key={id}
               className={`${({ isActive }) => {
                 return isActive ? 'active' : '';
-              }} flex items-center gap-6 text-[#A79F9F] text-2xl hover:text-[#21ff60ad] transition-all ease-in-out`}
+              }} flex items-center gap-6 text-[#A79F9F] text-[1.75rem] hover:text-[#21ff60ad] transition-all ease-in-out lg:text-2xl`}
             >
               {icon}
-              <p className='font-lexend text-sm'>{text}</p>
+              <p className='hidden font-lexend text-sm lg:block'>{text}</p>
             </NavLink>
           );
         })}
