@@ -54,7 +54,7 @@ export const skills = [
   {
     id: 5,
     bg: 'bg-[conic-gradient(transparent_144deg,#4c1d95_144deg)]',
-    skill: 'TailwindCSS',
+    skill: 'Tailwind',
   },
   {
     id: 6,
