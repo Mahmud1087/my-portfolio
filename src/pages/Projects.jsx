@@ -5,7 +5,7 @@ import { container, items } from '../components/utils';
 
 const Projects = () => {
   return (
-    <div className='w-full h-screen bg-[#1e1e1e] p-16 overflow-scroll lg:w-1/2'>
+    <div className='w-full h-screen bg-[#1e1e1e] overflow-scroll p-5 sm:p-16 lg:w-1/2'>
       <Heading title='projects' />
       <motion.div
         variants={container}
@@ -19,7 +19,7 @@ const Projects = () => {
             <motion.section
               variants={items}
               key={id}
-              className='w-full h-[40rem] bg-[#0000003d] rounded-xl p-2 flex flex-col gap-2 shadow-sm shadow-gray-700 lg:h-[22rem]'
+              className='w-full h-[30rem] bg-[#0000003d] rounded-xl p-2 flex flex-col gap-2 shadow-sm shadow-gray-700 sm:h-[40rem] lg:h-[22rem]'
             >
               <div className='h-[75%] w-full rounded-xl relative'>
                 <img
@@ -31,21 +31,21 @@ const Projects = () => {
                   {desc}
                 </div>
               </div>
-              <p className='text-white font-lexend text-[1.7rem] mt-4 mx-4 lg:hidden'>
+              <p className='text-white font-lexend mt-4 mx-4 text-base sm:text-[1.7rem] lg:hidden'>
                 {desc}
               </p>
               <article className='h-[25%] px-4 flex items-center gap-5'>
                 <a
                   href={link}
                   target='_blank'
-                  className='w-full bg-transparent border border-[#21ff60ad] text-white font-jolly text-[2.35rem] rounded-lg text-center py-3 hover:scale-[1.06] hover:bg-[#21ff60ad] transition-all ease-in-out lg:text-2xl lg:py-[0.3rem]'
+                  className='w-full bg-transparent border border-[#21ff60ad] text-white font-jolly rounded-lg text-center py-3 hover:scale-[1.06] hover:bg-[#21ff60ad] transition-all ease-in-out text-2xl sm:text-[2.35rem] lg:text-2xl lg:py-[0.3rem]'
                 >
                   Preview
                 </a>
                 <a
                   href={githubLink}
                   target='_blank'
-                  className='w-full bg-transparent border border-[#21ff60ad] text-white font-jolly text-[2.35rem] rounded-lg text-center py-3 hover:scale-[1.06] hover:bg-[#21ff60ad] transition-all ease-in-out lg:text-2xl lg:py-[0.3rem]'
+                  className='w-full bg-transparent border border-[#21ff60ad] text-white font-jolly rounded-lg text-center py-3 hover:scale-[1.06] hover:bg-[#21ff60ad] transition-all ease-in-out text-2xl sm:text-[2.35rem] lg:text-2xl lg:py-[0.3rem]'
                 >
                   Github
                 </a>
