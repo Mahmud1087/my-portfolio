@@ -4,7 +4,7 @@ import { motion } from 'framer-motion';
 
 const About = () => {
   return (
-    <div className='w-full h-screen bg-[#1e1e1e] flex flex-col gap-8 p-16 overflow-hidden lg:w-1/2'>
+    <div className='w-full h-screen bg-[#1e1e1e] flex flex-col gap-8 p-5 overflow-scroll pb-16 sm:pb-0 sm:overflow-hidden sm:p-16 lg:w-1/2'>
       <Heading title='about me' />
       <motion.div
         initial={{ y: -1000 }}
@@ -15,7 +15,7 @@ const About = () => {
           delay: 0.8,
           ease: [0.2, 0.71, 0.2, 1.01],
         }}
-        className='flex flex-col gap-8 text-[#A79F9F] font-lexend leading-9 text-[1.35rem] lg:leading-8 lg:text-base'
+        className='flex flex-col gap-8 text-[#A79F9F] font-lexend leading-9 text-base mx-5 sm:mx-0 sm:text-[1.35rem] lg:leading-8 lg:text-base'
       >
         <p>
           Jelly sweet roll jelly beans biscuit pie macaroon chocolate donut.
