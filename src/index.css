@@ -66,3 +66,16 @@ body {
     }
   }
 }
+
+@media screen and (max-width: 545px) {
+  .lbl {
+    font-size: 18px;
+
+    input,
+    textarea {
+      width: 100%;
+      font-size: 18px;
+      padding: 10px;
+    }
+  }
+}

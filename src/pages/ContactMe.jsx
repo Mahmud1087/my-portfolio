@@ -46,10 +46,10 @@ const ContactMe = () => {
   };
 
   return (
-    <div className='w-full h-screen bg-[#1e1e1e] p-16 overflow-scroll lg:w-1/2'>
+    <div className='w-full h-screen bg-[#1e1e1e] overflow-scroll p-5 sm:p-16 lg:w-1/2'>
       <ToastContainer />
       <Heading title='contact me' />
-      <p className='text-[#A79F9F] font-lexend mt-5 text-lg'>
+      <p className='text-[#A79F9F] font-lexend mt-5 text-base sm:text-lg'>
         Would love to hear from you. Kindly leave a message
       </p>
       <p className='w-fit px-4 py-1 rounded-full text-[#A79F9F] mt-3 shadow-md shadow-[#000] border border-black'>
@@ -107,7 +107,7 @@ const ContactMe = () => {
         </label>
         <button
           type='submit'
-          className='border border-[#21ff60ad] bg-[#21ff60ad] hover:bg-transparent transition-all ease-in-out font-jolly text-4xl w-fit py-3 px-14 text-white rounded-lg lg:text-2xl lg:py-2 lg:px-10'
+          className='border border-[#21ff60ad] bg-[#21ff60ad] hover:bg-transparent transition-all ease-in-out font-jolly text-2xl w-fit py-2 px-8 text-white rounded-lg sm:py-3 sm:px-14 sm:text-4xl lg:text-2xl lg:py-2 lg:px-10'
           onClick={validate}
         >
           Send
