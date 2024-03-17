@@ -19,7 +19,7 @@ const Projects = () => {
             <motion.section
               variants={items}
               key={id}
-              className='w-full h-[38rem] bg-[#0000003d] rounded-xl p-2 flex flex-col gap-2 shadow-sm shadow-gray-700 lg:h-80'
+              className='w-full h-[40rem] bg-[#0000003d] rounded-xl p-2 flex flex-col gap-2 shadow-sm shadow-gray-700 lg:h-[22rem]'
             >
               <div className='h-[75%] w-full rounded-xl relative'>
                 <img
@@ -27,7 +27,7 @@ const Projects = () => {
                   alt={`Project Image ${id}`}
                   className='h-full w-full rounded-[inherit]'
                 />
-                <div className='hidden absolute left-0 top-0 w-full h-full bg-[#00000083] opacity-0 hover:opacity-100 transition ease-in-out delay-150 rounded-[inherit] items-center justify-center text-white font-lexend px-5 text-center text-lg lg:flex'>
+                <div className='hidden absolute left-0 top-0 w-full h-full bg-[#000000bd] opacity-0 hover:opacity-100 transition ease-in-out delay-150 rounded-[inherit] items-center justify-center text-white font-lexend px-5 text-center text-lg lg:flex'>
                   {desc}
                 </div>
               </div>
