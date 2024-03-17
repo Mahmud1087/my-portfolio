@@ -49,6 +49,12 @@ const ContactMe = () => {
     <div className='w-full h-screen bg-[#1e1e1e] p-16 overflow-scroll lg:w-1/2'>
       <ToastContainer />
       <Heading title='contact me' />
+      <p className='text-[#A79F9F] font-lexend mt-5 text-lg'>
+        Would love to hear from you. Kindly leave a message
+      </p>
+      <p className='w-fit px-4 py-1 rounded-full text-[#A79F9F] mt-3 shadow-md shadow-[#000] border border-black'>
+        mahmud.eabdulazeez@gmail.com
+      </p>
       <motion.form
         initial={{ y: 1000 }}
         animate={{ y: 0 }}
