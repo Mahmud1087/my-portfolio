@@ -3,7 +3,7 @@ import logo from '../assets/e-icon.png';
 
 const Navbar = ({ openSidebar }) => {
   return (
-    <div className='w-full flex items-center justify-between p-5 border-b-2 border-b-[#00000088] fixed z-10 sm:hidden'>
+    <div className='w-full bg-[#272727] flex items-center justify-between p-5 border-b-2 border-b-[#00000088] fixed z-10 sm:hidden'>
       <div className='px-2 py-1 rounded-sm bg-[#21ff60ad]'>
         <img src={logo} alt='Developer logo' className='w-5' />
       </div>
