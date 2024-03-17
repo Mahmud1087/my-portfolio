@@ -13,6 +13,7 @@ const Sidebar = ({ closeSidebar, sidebarOpen }) => {
           animate={{ opacity: 1 }}
           exit={{ opacity: 0 }}
           className='fixed left-0 top-0 w-full h-screen bg-[#00000088] z-20'
+          onClick={closeSidebar}
         >
           <motion.div
             initial={{ x: '100%' }}
