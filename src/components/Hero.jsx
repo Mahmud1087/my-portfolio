@@ -21,7 +21,7 @@ const Hero = () => {
       }}
       className='hidden relative w-[35%] h-screen bg-[#1e1e1e] lg:block'
     >
-      <img src={image4} alt='Image' className='h-full w-full' />
+      <img src={image4} alt='Image' className='h-full w-full' loading='lazy' />
       <div className='absolute w-full flex flex-col items-center justify-center bottom-10 text-white'>
         <h1 className='font-jolly text-5xl'>Mahmud Abdulazeez</h1>
         <p className='font-lexend bg-[#21ff60ad] text-black px-4 py-1 font-bold rounded-lg'>
