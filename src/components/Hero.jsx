@@ -30,27 +30,24 @@ const Hero = () => {
         <div className='flex gap-6 mt-6 text-xl'>
           <a
             href='https://www.linkedin.com/in/enesifrontenddev'
+            target='_blank'
             className='hover:bg-[#21ff60ad] p-2 rounded-md'
           >
             <FaLinkedin />
           </a>
           <a
-            href='facebook.com'
+            href='https://web.facebook.com/mahmud.mahmud.1000469'
             className='hover:bg-[#21ff60ad] p-2 rounded-md transition-all'
+            target='_blank'
           >
             <FaFacebook />
           </a>
           <a
-            href='https://twitter.com/MahmudEnesi?t=7RMs3omqqHLCY5lyH7VlcA&s=09'
+            href='https://twitter.com/MahmudEnesi'
+            target='_blank'
             className='hover:bg-[#21ff60ad] p-2 rounded-md transition-all'
           >
             <FaTwitter />
-          </a>
-          <a
-            href='instagram.com'
-            className='hover:bg-[#21ff60ad] p-2 rounded-md transition-all'
-          >
-            <FaInstagram />
           </a>
         </div>
       </div>
