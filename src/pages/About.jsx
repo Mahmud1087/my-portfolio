@@ -34,7 +34,8 @@ const About = () => {
           <br />
           I'm passionate about technical writing and also enthusiastic about
           discussing front-end development and tech in general.
-          <br />I am actively seeking internship opportunities.
+          <br />I am open to internships, junior frontend roles, and also
+          collaborating on web development projects.
         </p>
         <p className='mb-10 lg:mb-5'>
           - Hard Skills: HTML, CSS, JavaScript, ReactJS, TailwindCSS, currently
