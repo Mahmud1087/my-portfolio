@@ -19,7 +19,7 @@ const Skills = () => {
           return (
             <motion.div key={id} variants={items}>
               <div className='py-10 rounded-xl bg-[#0000003d] flex items-center justify-center shadow-sm shadow-gray-600 hover:scale-[1.1] transition-all ease-in-out sm:p-12 lg:p-8'>
-                <ProgressBar bg={bg} skill={skill} />
+                <ProgressBar {...item} />
               </div>
             </motion.div>
           );

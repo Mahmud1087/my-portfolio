@@ -2,14 +2,21 @@ import projectImage1 from './assets/crappo.png';
 import projectImage2 from './assets/logistics.png';
 import projectImage3 from './assets/todo1.png';
 import projectImage4 from './assets/foodex.png';
-
 import {
   FaAddressBook,
+  FaBootstrap,
+  FaFigma,
+  FaGitAlt,
+  FaGithub,
   FaHouse,
+  FaHtml5,
   FaLaptopCode,
   FaPhone,
+  FaReact,
   FaRegPenToSquare,
 } from 'react-icons/fa6';
+import { IoLogoCss3, IoLogoJavascript, IoLogoPython } from 'react-icons/io5';
+import { SiTailwindcss } from 'react-icons/si';
 
 export const menuList = [
   { id: 1, icon: <FaHouse />, text: 'Home', to: '/' },
@@ -37,47 +44,62 @@ export const skills = [
   {
     id: 1,
     bg: 'bg-[conic-gradient(transparent_36deg,#FF5733_36deg)]',
-    skill: 'HTML',
+    skill: <FaHtml5 />,
+    color: 'text-[#FF5733]',
   },
   {
     id: 2,
     bg: 'bg-[conic-gradient(transparent_68deg,#264de4_68deg)]',
-    skill: 'CSS',
+    skill: <IoLogoCss3 />,
+    color: 'text-[#264de4]',
   },
   {
     id: 3,
     bg: 'bg-[conic-gradient(transparent_108deg,#faf00a_108deg)]',
-    skill: 'JavaScript',
+    skill: <IoLogoJavascript />,
+    color: 'text-[#faf00a]',
   },
   {
     id: 4,
-    bg: 'bg-[conic-gradient(transparent_130deg,#61dbfb_130deg)]',
-    skill: 'ReactJs',
+    bg: 'bg-[conic-gradient(transparent_110deg,#61dbfb_110deg)]',
+    skill: <FaReact />,
+    color: 'text-[#61dbfb]',
   },
   {
     id: 5,
-    bg: 'bg-[conic-gradient(transparent_144deg,#4c1d95_144deg)]',
-    skill: 'Tailwind',
+    bg: 'bg-[conic-gradient(transparent_104deg,#4c1d95_104deg)]',
+    skill: <SiTailwindcss />,
+    color: 'text-[#4c1d95]',
   },
   {
     id: 6,
     bg: 'bg-[conic-gradient(transparent_170deg,purple_170deg)]',
-    skill: 'Bootstrap',
+    skill: <FaBootstrap />,
+    color: 'text-[purple]',
   },
   {
     id: 7,
-    bg: 'bg-[conic-gradient(transparent_110deg,#d9d9d9_110deg)]',
-    skill: 'Git/Github',
+    bg: 'bg-[conic-gradient(transparent_85deg,#ff5733_85deg)]',
+    skill: <FaGitAlt />,
+    color: 'text-[#ff5733]',
   },
   {
     id: 8,
-    bg: 'bg-[conic-gradient(transparent_175deg,#FF5766_175deg)]',
-    skill: 'Figma',
+    bg: 'bg-[conic-gradient(transparent_110deg,#A79F9F_110deg)]',
+    skill: <FaGithub />,
+    color: 'text-[#A79F9F]',
   },
   {
     id: 9,
+    bg: 'bg-[conic-gradient(transparent_175deg,#FF5766_175deg)]',
+    skill: <FaFigma />,
+    color: 'text-[#ff5766]',
+  },
+  {
+    id: 10,
     bg: 'bg-[conic-gradient(transparent_180deg,#faf00a_180deg)]',
-    skill: 'Python',
+    skill: <IoLogoPython />,
+    color: 'text-[#faf00a]',
   },
   // {
   //   id: 10,
