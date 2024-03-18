@@ -31,7 +31,7 @@ const Projects = () => {
                   {desc}
                 </div>
               </div>
-              <p className='text-white font-lexend mt-4 mx-4 text-base sm:text-[1.7rem] lg:hidden'>
+              <p className='text-white font-lexend mt-4 mx-4 text-base leading-6 sm:text-[1.7rem] lg:hidden'>
                 {desc}
               </p>
               <article className='h-[25%] px-4 flex items-center gap-5'>

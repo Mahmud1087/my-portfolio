@@ -1,9 +1,7 @@
 import Button from '../components/Button';
 import { motion } from 'framer-motion';
-import image from '../assets/image.jpg';
-// import image2 from '../assets/image2.jpg';
-// import image3 from '../assets/image3.jpg';
-// import image4 from '../assets/image4.jpg';
+// import image from '../assets/image.jpg';
+import image4 from '../assets/image4.jpg';
 
 const Home = () => {
   return (
@@ -20,7 +18,7 @@ const Home = () => {
         className='h-40 w-40 rounded-full shdw sm:h-56 sm:w-56 lg:hidden'
       >
         <img
-          src={image}
+          src={image4}
           alt='Developer image'
           className='w-full h-full rounded-[inherit] object-cover object-left-top'
         />
