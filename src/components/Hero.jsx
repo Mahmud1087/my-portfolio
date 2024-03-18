@@ -1,11 +1,6 @@
 // import image from '../assets/image.jpg';
 import image4 from '../assets/image4.jpg';
-import {
-  FaFacebook,
-  FaInstagram,
-  FaLinkedin,
-  FaTwitter,
-} from 'react-icons/fa6';
+import { FaFacebook, FaLinkedin, FaTwitter } from 'react-icons/fa6';
 import { motion } from 'framer-motion';
 
 const Hero = () => {
