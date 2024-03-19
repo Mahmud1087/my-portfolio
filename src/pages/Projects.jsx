@@ -2,7 +2,6 @@ import Heading from '../components/Heading';
 import { projects } from '../data';
 import { motion } from 'framer-motion';
 import { container, items } from '../components/utils';
-import logisticsBlur from '../assets/logisticsBlur.jpg';
 import { LazyLoadImage } from 'react-lazy-load-image-component';
 import 'react-lazy-load-image-component/src/effects/blur.css';
 
@@ -17,7 +16,7 @@ const Projects = () => {
         className='w-full grid gap-x-4 gap-y-8 mt-12 lg:grid-cols-2'
       >
         {projects.map((project) => {
-          const { id, link, image, githubLink, desc } = project;
+          const { id, link, image, githubLink, desc, lazyImg } = project;
           return (
             <motion.section
               variants={items}
@@ -28,9 +27,9 @@ const Projects = () => {
                 <LazyLoadImage
                   src={image}
                   alt={`Project Image ${id}`}
-                  className='h-full w-full rounded-[inherit]'
-                  placeholderSrc={logisticsBlur}
-                  effect='blur'
+                  className='lazyclass'
+                  placeholderSrc={lazyImg}
+                  effect='blur lazyclass'
                 />
                 <div className='hidden absolute left-0 top-0 w-full h-full bg-[#000000bd] opacity-0 hover:opacity-100 transition ease-in-out delay-150 rounded-[inherit] items-center justify-center text-white font-lexend px-5 text-center text-sm lg:flex'>
                   {desc}

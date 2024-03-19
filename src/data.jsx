@@ -2,6 +2,12 @@ import projectImage1 from './assets/crappo.png';
 import projectImage2 from './assets/logistics.png';
 import projectImage3 from './assets/todo1.png';
 import projectImage4 from './assets/foodex.png';
+
+import logisticsCompressed from './assets/compressed/logisticsBlur.jpg';
+import crappoCompressed from './assets/compressed/crappo.jpg';
+import todoCompressed from './assets/compressed/todo1.jpg';
+import foodexCompressed from './assets/compressed/foodex.jpg';
+
 import {
   FaAddressBook,
   FaBootstrap,
@@ -115,6 +121,7 @@ export const projects = [
     link: 'https://crappo-crypto-page.netlify.app/',
     githubLink: 'https://github.com/Mahmud1087/crappo-cryptocurrency-webpage',
     desc: 'A fully responsive landing page for a crypto currency webapp. Built with HTML, CSS, and JavaScript',
+    lazyImg: crappoCompressed,
   },
   {
     id: 2,
@@ -122,6 +129,7 @@ export const projects = [
     link: 'https://transit-flow-logistics.netlify.app/',
     githubLink: 'https://github.com/Mahmud1087/transit-flow',
     desc: 'A fully responsive static landing page for a logistics company (TransitFlow). Built with React and tailwind',
+    lazyImg: logisticsCompressed,
   },
   {
     id: 3,
@@ -130,6 +138,7 @@ export const projects = [
     githubLink:
       'https://github.com/Mahmud1087/react-projects/tree/main/todo-reactapp',
     desc: 'A todo app with features like filter (by all, completed, and active tasks), it also includes dark and light mode features. Built with react and styled component',
+    lazyImg: todoCompressed,
   },
   {
     id: 4,
@@ -137,6 +146,7 @@ export const projects = [
     link: 'https://foodex-restaurant.netlify.app/',
     githubLink: 'https://github.com/Mahmud1087/Restaurant-landing-page',
     desc: 'A fully responsive static landing page for a restaurant (foodex). Built with HTML, CSS, and JavaScript',
+    lazyImg: foodexCompressed,
   },
   // {
   //   id: 5,

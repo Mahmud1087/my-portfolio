@@ -1,7 +1,10 @@
 // import image from '../assets/image.jpg';
 import image4 from '../assets/image4.jpg';
+import image4Compressed from '../assets/compressed/image4.jpg';
 import { FaFacebook, FaLinkedin, FaTwitter } from 'react-icons/fa6';
 import { motion } from 'framer-motion';
+import { LazyLoadImage } from 'react-lazy-load-image-component';
+import 'react-lazy-load-image-component/src/effects/blur.css';
 
 const Hero = () => {
   return (
@@ -16,7 +19,19 @@ const Hero = () => {
       }}
       className='hidden relative w-[35%] h-screen bg-[#1e1e1e] lg:block'
     >
-      <img src={image4} alt='Image' className='h-full w-full' />
+      <LazyLoadImage
+        placeholderSrc={image4Compressed}
+        effect='blur'
+        wrapperProps={{
+          style: {
+            width: '100%',
+            height: '100%',
+          },
+        }}
+        src={image4}
+        alt='Image'
+        className='h-full w-full'
+      />
       <div className='absolute w-full flex flex-col items-center justify-center bottom-10 text-white'>
         <h1 className='font-jolly text-5xl'>Mahmud Abdulazeez</h1>
         <p className='font-lexend bg-[#21ff60ad] text-black text-[0.8rem] px-4 py-1 font-bold rounded-md mt-1'>
