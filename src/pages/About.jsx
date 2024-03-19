@@ -4,7 +4,7 @@ import { motion } from 'framer-motion';
 
 const About = () => {
   return (
-    <div className='w-full h-screen bg-[#1e1e1e] flex flex-col gap-8 p-5 overflow-scroll pb-16 sm:pb-0 sm:overflow-scroll sm:p-16 lg:w-1/2'>
+    <div className='w-full h-screen bg-[#1e1e1e] flex flex-col gap-8 p-5 overflow-scroll pb-16 sm:pb-0 sm:overflow-scroll sm:p-16 lg:p-12  lg:w-1/2'>
       <Heading title='about me' />
       <motion.div
         initial={{ y: -10000 }}
@@ -32,7 +32,7 @@ const About = () => {
           I specialize in building interactive and aesthetically pleasing web
           interfaces.
           <br />
-          I'm passionate about technical writing and also enthusiastic about
+          I am passionate about technical writing and also enthusiastic about
           discussing front-end development and tech in general.
           <br />I am open to internships, junior frontend roles, and also
           collaborating on web development projects.
