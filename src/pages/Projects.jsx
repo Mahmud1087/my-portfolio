@@ -2,6 +2,9 @@ import Heading from '../components/Heading';
 import { projects } from '../data';
 import { motion } from 'framer-motion';
 import { container, items } from '../components/utils';
+import logisticsBlur from '../assets/logisticsBlur.jpg';
+import { LazyLoadImage } from 'react-lazy-load-image-component';
+import 'react-lazy-load-image-component/src/effects/blur.css';
 
 const Projects = () => {
   return (
@@ -22,10 +25,12 @@ const Projects = () => {
               className='w-full h-[30rem] bg-[#0000003d] rounded-xl p-2 flex flex-col gap-2 shadow-sm shadow-gray-700 sm:h-[40rem] lg:h-[20rem]'
             >
               <div className='h-[70%] w-full rounded-xl relative'>
-                <img
+                <LazyLoadImage
                   src={image}
                   alt={`Project Image ${id}`}
                   className='h-full w-full rounded-[inherit]'
+                  placeholderSrc={logisticsBlur}
+                  effect='blur'
                 />
                 <div className='hidden absolute left-0 top-0 w-full h-full bg-[#000000bd] opacity-0 hover:opacity-100 transition ease-in-out delay-150 rounded-[inherit] items-center justify-center text-white font-lexend px-5 text-center text-sm lg:flex'>
                   {desc}
