@@ -11,7 +11,7 @@ const Heading = ({ title }) => {
         delay: 0.4,
         ease: [0.2, 0.71, 0.2, 1.01],
       }}
-      className='text-white font-jolly text-6xl text-center mt-16 sm:text-start sm:mt-0 sm:text-[5rem]'
+      className='text-white font-jolly text-6xl text-center mt-16 sm:text-start sm:mt-0 sm:text-[4rem]'
     >
       <span className='code'>{`< `}</span>
       {title}
