@@ -46,13 +46,13 @@ const ContactMe = () => {
   };
 
   return (
-    <div className='w-full h-screen bg-[#1e1e1e] overflow-scroll p-5 sm:p-16 lg:w-1/2'>
+    <div className='w-full h-screen bg-[#1e1e1e] overflow-scroll p-5 sm:p-16 lg:p-12 lg:w-1/2'>
       <ToastContainer />
       <Heading title='contact me' />
-      <p className='text-[#A79F9F] font-lexend mt-5 text-base sm:text-lg'>
+      <p className='text-[#A79F9F] font-lexend mt-5 text-base sm:text-xl lg:text-base'>
         Would love to hear from you. Kindly leave a message
       </p>
-      <p className='w-fit px-4 py-1 rounded-full text-[#A79F9F] mt-3 shadow-md shadow-[#000] border border-black'>
+      <p className='w-fit px-5 py-1 rounded-full text-[#A79F9F] mt-3 shadow-md shadow-[#000] border border-black sm:text-xl lg:text-sm'>
         mahmud.eabdulazeez@gmail.com
       </p>
       <motion.form
@@ -69,45 +69,48 @@ const ContactMe = () => {
       >
         <label htmlFor='name' className='lbl'>
           <div>
-            Name <span className='text-red-600 text-3xl'>*</span>
+            Name <span className='text-red-500'>*</span>
           </div>
           <input
             type='text'
             name='name'
             value={details.name}
             onChange={handleDetailsChange}
+            placeholder='Enter your name...'
             required
           />
         </label>
         <label htmlFor='email' className='lbl'>
           <div>
-            Email <span className='text-red-600 text-3xl'>*</span>
+            Email <span className='text-red-500'>*</span>
           </div>
           <input
             type='email'
             name='email'
             value={details.email}
             onChange={handleDetailsChange}
+            placeholder='Enter your email...'
             required
           />
         </label>
         <label htmlFor='message' className='lbl'>
           <div>
-            Message <span className='text-red-600 text-3xl'>*</span>
+            Message <span className='text-red-500'>*</span>
           </div>
           <textarea
             name='message'
             id='message'
             cols='30'
-            rows='10'
+            rows='8'
             value={details.message}
             onChange={handleDetailsChange}
+            placeholder='Leave a message...'
             required
           ></textarea>
         </label>
         <button
           type='submit'
-          className='border border-[#21ff60ad] bg-[#21ff60ad] hover:bg-transparent transition-all ease-in-out font-jolly text-2xl w-fit py-2 px-8 text-white rounded-lg sm:py-3 sm:px-14 sm:text-4xl lg:text-2xl lg:py-2 lg:px-10'
+          className='border border-[#21ff60ad] bg-[#21ff60ad] hover:bg-transparent transition-all ease-in-out font-jolly text-2xl w-fit py-2 px-8 text-white rounded-lg sm:py-3 sm:px-14 sm:text-4xl lg:text-2xl lg:py-1 lg:px-8'
           onClick={validate}
         >
           Send
