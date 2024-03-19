@@ -5,7 +5,7 @@ import { container, items } from '../components/utils';
 
 const Projects = () => {
   return (
-    <div className='w-full h-screen bg-[#1e1e1e] overflow-scroll p-5 sm:p-16 lg:w-1/2'>
+    <div className='w-full h-screen bg-[#1e1e1e] overflow-scroll p-5 sm:p-16 lg:p-12 lg:w-1/2'>
       <Heading title='projects' />
       <motion.div
         variants={container}
@@ -19,19 +19,19 @@ const Projects = () => {
             <motion.section
               variants={items}
               key={id}
-              className='w-full h-[30rem] bg-[#0000003d] rounded-xl p-2 flex flex-col gap-2 shadow-sm shadow-gray-700 sm:h-[40rem] lg:h-[22rem]'
+              className='w-full h-[30rem] bg-[#0000003d] rounded-xl p-2 flex flex-col gap-2 shadow-sm shadow-gray-700 sm:h-[40rem] lg:h-[20rem]'
             >
-              <div className='h-[75%] w-full rounded-xl relative'>
+              <div className='h-[70%] w-full rounded-xl relative'>
                 <img
                   src={image}
                   alt={`Project Image ${id}`}
                   className='h-full w-full rounded-[inherit]'
                 />
-                <div className='hidden absolute left-0 top-0 w-full h-full bg-[#000000bd] opacity-0 hover:opacity-100 transition ease-in-out delay-150 rounded-[inherit] items-center justify-center text-white font-lexend px-5 text-center text-lg lg:flex'>
+                <div className='hidden absolute left-0 top-0 w-full h-full bg-[#000000bd] opacity-0 hover:opacity-100 transition ease-in-out delay-150 rounded-[inherit] items-center justify-center text-white font-lexend px-5 text-center text-sm lg:flex'>
                   {desc}
                 </div>
               </div>
-              <p className='text-white font-lexend mt-4 mx-4 text-base leading-6 sm:text-[1.7rem] lg:hidden'>
+              <p className='text-white font-lexend mt-4 mx-4 text-base leading-9 sm:text-[1.56rem] lg:hidden'>
                 {desc}
               </p>
               <article className='h-[25%] px-4 flex items-center gap-5'>
