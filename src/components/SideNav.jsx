@@ -17,14 +17,14 @@ const SideNav = () => {
       }}
       className='hidden w-[18%] bg-[#1e1e1e] h-screen flex-col items-center border-r-2 border-[#00000065] sm:px-3 sm:flex lg:px-0 lg:w-[15%]'
     >
-      <div className='w-full flex justify-center items-end text-3xl text-[#272727] px-3 py-2 bg-[#21ff60ad] mt-8 font-jolly sm:rounded-lg lg:rounded-none'>
-        <img src={logo} alt='logo' className='w-7' />
+      <div className='w-full flex justify-center items-end text-xl text-[#272727] px-3 py-1 bg-[#21ff60ad] mt-8 font-jolly sm:rounded-lg lg:rounded-none'>
+        <img src={logo} alt='logo' className='w-5' />
         n
-        <img src={logo} alt='logo' className='w-7' />
+        <img src={logo} alt='logo' className='w-5' />
         si
       </div>
 
-      <article className='flex flex-col sm:gap-16 sm:mt-36 lg:gap-10 lg:mt-24'>
+      <article className='flex flex-col sm:gap-16 sm:mt-36 lg:gap-10 lg:mt-20'>
         {menuList.map((item) => {
           const { id, icon, text, to } = item;
           return (
@@ -33,16 +33,16 @@ const SideNav = () => {
               key={id}
               className={`${({ isActive }) => {
                 return isActive ? 'active' : '';
-              }} flex items-center gap-6 text-[#A79F9F] text-[1.75rem] hover:text-[#21ff60ad] transition-all ease-in-out lg:text-2xl`}
+              }} flex items-center gap-6 text-[#A79F9F] text-[1.75rem] hover:text-[#21ff60ad] transition-all ease-in-out lg:text-xl`}
             >
               {icon}
-              <p className='hidden font-lexend text-sm lg:block'>{text}</p>
+              <p className='hidden font-lexend text-xs lg:block'>{text}</p>
             </NavLink>
           );
         })}
       </article>
 
-      <div className='grid place-items-end h-full mb-8 text-3xl text-white'>
+      <div className='grid place-items-end h-full mb-4 text-2xl text-white'>
         <a href='https://www.github.com/Mahmud1087' target='_blank'>
           <FaGithub />
         </a>

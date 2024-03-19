@@ -5,7 +5,7 @@ import image4 from '../assets/image4.jpg';
 
 const Home = () => {
   return (
-    <div className='w-full h-screen bg-[#1e1e1e] flex flex-col gap-4 items-center justify-center text-center overflow-hidden sm:gap-7 lg:w-[50%]'>
+    <div className='w-full h-screen bg-[#1e1e1e] flex flex-col gap-4 items-center justify-center text-center overflow-hidden sm:gap-0 lg:w-[50%]'>
       <motion.div
         initial={{ opacity: 0, scale: 0.3 }}
         animate={{ opacity: 1, scale: 1 }}
@@ -32,7 +32,7 @@ const Home = () => {
           delay: 0.4,
           ease: [0.2, 0.71, 0.2, 1.01],
         }}
-        className='font-jolly text-[3.2rem] text-white sm:text-[5rem] lg:text-8xl'
+        className='font-jolly text-[3.2rem] text-white sm:text-[5rem] lg:text-[5.5rem]'
       >
         Mahmud Abdulazeez
       </motion.h1>
@@ -45,7 +45,7 @@ const Home = () => {
           delay: 0.4,
           ease: [0.2, 0.71, 0.2, 1.01],
         }}
-        className='font-lato text-[#A7A1A1] text-base flex flex-col gap-3 sm:text-2xl'
+        className='font-lato text-[#A7A1A1] text-base flex flex-col gap-2 sm:text-2xl lg:text-xl'
       >
         <p>
           <span className='code'>{'<>'}</span> Frontend Developer{' '}
@@ -55,7 +55,7 @@ const Home = () => {
           <span className='code'>{'<>'}</span> Technical Writer{' '}
           <span className='code'>{'</>'}</span>
         </p>
-        <p className='mb-6'>
+        <p className='mb-16 lg:mb-12'>
           <span className='code'>{'<>'}</span> Open Source Enthusiast{' '}
           <span className='code'>{'</>'}</span>
         </p>
