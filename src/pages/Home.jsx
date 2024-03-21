@@ -1,7 +1,9 @@
 import Button from '../components/Button';
 import { motion } from 'framer-motion';
-// import image from '../assets/image.jpg';
 import image4 from '../assets/image4.jpg';
+import image4Compressed from '../assets/compressed/image4.jpg';
+import { LazyLoadImage } from 'react-lazy-load-image-component';
+import 'react-lazy-load-image-component/src/effects/blur.css';
 
 const Home = () => {
   return (
@@ -17,7 +19,16 @@ const Home = () => {
         }}
         className='h-40 w-40 rounded-full shdw sm:h-56 sm:w-56 lg:hidden'
       >
-        <img
+        <LazyLoadImage
+          placeholderSrc={image4Compressed}
+          effect='blur'
+          wrapperProps={{
+            style: {
+              width: '100%',
+              height: '100%',
+              borderRadius: 'inherit',
+            },
+          }}
           src={image4}
           alt='Developer image'
           className='w-full h-full rounded-[inherit] object-cover object-left-top'
